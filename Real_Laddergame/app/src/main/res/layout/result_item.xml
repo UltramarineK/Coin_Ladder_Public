@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_border"
+
+    >
+
+    <TextView
+        android:id="@+id/res_name"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="이름"/>
+
+    <TextView
+        android:id="@+id/res_result"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="결과"/>
+</LinearLayout>

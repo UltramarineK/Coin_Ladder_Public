@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/package_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="The Ladder Game"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_persons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:text="참여인원"/>
+
+        <!-- Change to Drop Box -->
+
+        <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:background="@drawable/main_border"
+            android:id="@+id/tabHost">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/tab1_tabs0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+
+                            android:id="@+id/tab0_persons_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:nextFocusDown="@+id/tab0_persons_2"
+                            android:hint="사람1"/>
+                        <EditText
+                            android:id="@+id/tab0_persons_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:imeOptions="actionDone"
+                            android:hint="사람2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab1_tabs1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/tab1_persons_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람1"/>
+                        <EditText
+                            android:id="@+id/tab1_persons_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람2"/>
+                        <EditText
+                            android:id="@+id/tab1_persons_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람3"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab1_tabs2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/tab2_persons_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람1"/>
+                        <EditText
+                            android:id="@+id/tab2_persons_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람2"/>
+                        <EditText
+                            android:id="@+id/tab2_persons_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람3"/>
+                        <EditText
+                            android:id="@+id/tab2_persons_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람4"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab1_tabs3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/tab3_persons_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람1"/>
+                        <EditText
+                            android:id="@+id/tab3_persons_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람2"/>
+                        <EditText
+                            android:id="@+id/tab3_persons_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람3"/>
+                        <EditText
+                            android:id="@+id/tab3_persons_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람4"/>
+                        <EditText
+                            android:id="@+id/tab3_persons_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람5"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tab1_tabs4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/tab4_persons_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람1"/>
+                        <EditText
+                            android:id="@+id/tab4_persons_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람2"/>
+                        <EditText
+                            android:id="@+id/tab4_persons_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람3"/>
+                        <EditText
+                            android:id="@+id/tab4_persons_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람4"/>
+                        <EditText
+                            android:id="@+id/tab4_persons_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람5"/>
+                        <EditText
+                            android:id="@+id/tab4_persons_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:hint="사람6"/>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/tv_win"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="당첨갯수"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </TabHost>
+
+        <!-- Change to Drop Box -->
+        <TabHost
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_border"
+            android:paddingBottom="10dp"
+            android:id="@+id/tabHost2">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tab2_tabs0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"></LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/tab2_tabs1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2_tabs2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2_tabs3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2_tabs4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"></LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+        <TextView
+            android:id="@+id/tv_lines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:text="사다리수"/>
+
+        <!-- Change to Drop Box -->
+        <Spinner
+            android:id="@+id/sp_lines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_border"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/main_layout"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="시작"/>
+
+
+
+</RelativeLayout>
